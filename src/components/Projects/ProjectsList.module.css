@@ -1,0 +1,95 @@
+.containerProjects {
+  padding: 1rem;
+  padding: 3rem;
+}
+
+.projectsWrapper {
+  max-width: 1200px;
+  margin: 2rem auto;
+  display: grid;
+  gap: 3rem;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+  background-color: var(--bgh-color-1);
+}
+
+.projectsWrapper li {
+  display: grid;
+  flex-direction: column;
+  justify-items: center;
+  text-align: center;
+  gap: .9rem;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: .5rem;
+  padding: 1rem;
+  box-shadow: 8px 8px 1px;
+  transition: .2s;
+}
+
+.projectsWrapper li:hover {
+  transform: translate(8px, 8px);
+  box-shadow: 0px 0px 0px;
+}
+
+.projectsWrapper li div {
+  cursor: pointer;
+  overflow: hidden;
+  min-height: 0;
+}
+
+.projectsWrapper li div img {
+  transition: .2s;
+  max-width: 240px;
+  height: 140px;
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: .5rem;
+}
+
+.projectsWrapper li h2 {
+  font-size: clamp(1.4rem, 2vw, 1.6rem);
+}
+
+.projectsWrapper li p {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+
+}
+
+.projectsWrapper li a {
+  background-color: black;
+  font-size: .8rem;
+  border: 1px solid gray;
+  color: white;
+  border-radius: .5rem;
+  padding: .5rem 1rem;
+  transition: .2s;
+  font-family: var(--font-parag-1);
+}
+
+.projectsWrapper li a:hover {
+  background-color: var(--bgh-color-1);
+  color: black;
+  border: 1px solid black;
+
+}
+
+
+.title {
+  font-size: 2rem;
+  margin: 0 auto;
+  width: max-content;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 3rem;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  background-image: url('src/assets/gear/svg');
+  height: 100%;
+  bottom: -5px;
+  left: 0;
+  animation: moveUnderline 5s infinite forwards;
+}

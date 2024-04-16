@@ -1,0 +1,10 @@
+.footer {
+  max-width: var(--max-width-sec);
+  text-align: center;
+  margin: 1rem auto;
+  padding: 2rem;
+}
+
+.parag {
+  font-size: var(--font-size-p);
+}

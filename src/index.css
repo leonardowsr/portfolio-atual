@@ -1,0 +1,87 @@
+/* global css */
+
+:root {
+  --max-width-sec: 1200px;
+  --bgh-color-1: #f9f5f2;
+  --color-bg-w: #f9f5f2;
+
+  --font-size-h1: clamp(1.6rem, 2.5vw, 3rem);
+  --font-size-p: clamp(1rem, 1.7vw, 1.3rem);
+  --font-size-h2Tech: clamp(1rem, 1.4vw, 1.3rem);
+  ;
+  --font-size-pTech: clamp(.7rem, 2vw, 1rem);
+
+  --screen-size-animation: 0;
+  --font-parag-1: "Merriweather", Arial, sans-serif;
+  --font-title-1: "Roboto", arial, sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bgh-color-1);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1 {
+  font-family: var(--font-title-1);
+}
+
+h2 {
+  font-family: var(--font-title-1);
+}
+
+p {
+  font-family: var(--font-parag-1);
+  font-style: italic;
+  line-height: 1.6rem;
+}
+
+*/
+/* animation */
+
+.animeLeft {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: animeLeft 0.5s forwards;
+}
+
+.animeRight {
+  opacity: 0;
+  transform: translateX(+30px);
+  animation: animeLeft 0.5s forwards;
+}
+
+
+@keyframes animeLeft {
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
+
+@keyframes animeRight {
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
