@@ -25,7 +25,7 @@ function Infor() {
         </p>
         <ul>
           <li>
-            <a target="_blank" href="https://github.com/Marshalldt1">
+            <a target="_blank" href="https://github.com/leonardowsr">
               <img
                 src="/assets/github-icon.svg"
                 alt="github logo"
